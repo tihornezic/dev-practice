@@ -1,0 +1,104 @@
+.featured {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: $white;
+    min-height: 490px;
+    background-image: linear-gradient(to top, #1b1b1b 0%, #373737 100%);
+
+    @media (max-width: $md) {
+        display: block;
+    }
+
+    .featured-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -100px;
+        margin-bottom: 100px;
+        z-index: 5;
+
+        @media (max-width: $lg) {
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: -50px;
+            margin-bottom: 170px;
+        }
+
+        &:last-child {
+            @media (max-width: $md) {
+                padding-bottom: 100px;
+            }
+        }
+
+        h2 {
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: $red;
+            color: $white;
+            text-decoration: none;
+            padding: 15px 0;
+            position: relative;
+            top: 125px;
+            width: 75%;
+
+            @media (max-width: $md) {
+                margin-top: -90px;
+                
+            }
+        }
+
+        img {
+            background-image: -webkit-linear-gradient(145deg, #a2fe73, #35fdb2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: hue 10s infinite;
+            width: 500px;
+
+            // media queries: always from bigger to smaller!
+            @media (max-width: 1500px) {
+                width: 350px;
+            }
+
+            @media (max-width: $xl) {
+                width: 100%;
+            }
+
+            @media (max-width: $md) {
+                display: block;
+                margin: auto;
+                width: auto;
+            }
+
+            @media (max-width: $sm) {
+                width: 100%;
+            }
+        }
+
+        p {
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+
+    p {
+        color: $grey;
+    }
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}

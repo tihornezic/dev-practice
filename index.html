@@ -1,0 +1,198 @@
+<!-- npm -g install gulp-cli -->
+<!-- npm install gulp -->
+<!-- npm install gulp-sass -->
+<!-- gulp sass:watch -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/animate.js"></script>
+    <title>ROCCAT – Set the Rules</title>
+</head>
+<body>
+    <div class='loader-wrapper' id='loader-wrapper''>
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header>
+        <div class=' pre-header'>
+        <ul>
+            <li><a href="#">Our COVID-19 Response</a></li>
+            <li><a href="#">Downloads & Support</a></li>
+            <li><a href="#">EN</a></li>
+        </ul>
+    </div>
+    <nav>
+        <a class='hamburger-menu-button' id='hamburger-menu-button' href=""><i class="fas fa-bars"></i></a>
+        <a class='search' id='search-small' href="#"><i class="fas fa-search"></i></a>
+        <a class='user' href="#"><i class="fas fa-user"></i></a>
+
+        <ul id='ul'>
+            <div class='header-logo'>
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <div class='header-li' id='header-li'>
+                <li><a href="#">Mice</a></li>
+                <li><a href="#">Keyboards</a></li>
+                <li><a href="#">Headsets</a></li>
+                <li><a href="#">Mousepads</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Content Creators</a></li>
+            </div>
+            <div class='nav-right-side'>
+                <a id="search" href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </ul>
+
+    </nav>
+    </header>
+
+    <section class='hero'>
+        <h1>Flip the <span>switch</span></h1>
+        <!-- <video preload="auto" muted="true" autoplay="" loop="" playsinline="true" src="img/video.mp4"></video> -->
+    </section>
+
+    <section class='featured'>
+        <div class='featured-item' data-animation='animate__fadeInUp' data-animation-delay='0.3'>
+            <img src="img/keyboard.png" alt="">
+            <h2>VULCAN TKL PRO</h2>
+            <p>Tenkeyless form factor
+                Titan Switch Optical
+                AIMO intelligent lighting engine
+                Mixer-style media controls
+                Detachable braided USB-C cable</p>
+
+            <a href="#">More information</a>
+        </div>
+
+        <div class='featured-item' data-animation='animate__fadeInUp' data-animation-delay='0.5'>
+            <img src="img/mouse.png" alt="">
+            <h2>BURST PRO</h2>
+            <p>Extreme lightweight shell – only 68g
+                Titan Switch Optical speed & precision
+                PhantomFlexTM cable virtually disappears
+                Heat-treated pure PTFE glides</p>
+
+            <a href="#">More information</a>
+        </div>
+
+        <div class='featured-item' data-animation='animate__fadeInUp' data-animation-delay='0.7'>
+            <img src="img/headset.png" alt="">
+            <h2>ELO 7.1 AIR</h2>
+            <p>Tenkeyless form factor
+                Titan Switch Optical
+                AIMO intelligent lighting engine
+                Mixer-style media controls
+                Detachable braided USB-C cable</p>
+
+            <a href="#">More information</a>
+        </div>
+    </section>
+
+    <section class='products'>
+        <h2>
+            At ROCCAT, we're passionate about developing premium gaming hardware that makes you play better. German engineering since 2007.
+        </h2>
+
+        <div class='container grid'>
+            <div class='product-item product-item-hover product-keyboard1' data-animation='animate__fadeInLeft' data-animation-delay='0.6'>
+                <div class='product-info'>
+                    <h3>Vulcan Pro</h3>
+                    <p>Optical RGB Gaming Keyboard</p>
+                </div>
+                <div class='overlay' onclick="location.href='#'">
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+
+            <div class='product-item product-item-hover product-headset' data-animation='animate__fadeInRight' data-animation-delay='0.6'>
+                <div class='product-info'>
+                    <h3>Elo 7.1 USB</h3>
+                    <p>Surround Sound RGB Gaming Headset</p>
+                </div>
+                <div class='overlay' onclick="location.href='#'">
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+
+            <div class='area product-item'>
+                <div class='are1 product-keyboard2' data-animation='animate__fadeInUp' data-animation-delay='0.6'>
+                    <div class='product-info'>
+                        <h3>Vulcan TKL</h3>
+                        <p>Compact Mechanical RGB Gaming Keyboard</p>
+                    </div>
+
+                    <div class='overlay-grid' onclick="location.href='#'">
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
+                <div class='are2 product-mousepad' data-animation='animate__fadeInUp' data-animation-delay='0.6'>
+                    <div class='product-info'>
+                        <h3>Sense AIMO XXL</h3>
+                        <p>RGB Illumination Gaming Mousepad</p>
+                    </div>
+                    <div class='overlay-grid' onclick="location.href='#'">
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class='product-item product-item-hover product-mouse' 
+            data-animation='animate__fadeInUp' data-animation-delay='0.6'>
+                <div class='product-info'>
+                    <h3>Burst Pro</h3>
+                    <p>Extreme Lightweight Optical Pro Gaming Mouse </p>
+                </div>
+                <div class='overlay' onclick="location.href='#'">
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class='footer-content'>
+            <div class='logos'>
+                <img src="img/roccat.png" alt="roccat">
+                <img src="img/tb.png" alt="tb">
+            </div>
+            <div class='center-content'>
+                <p>© Turtle Beach 2021</p>
+                <p>ROCCAT© is a Turtle Beach brand</p>
+            </div>
+            <div class='icons'>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class='search-wrapper' id='search-wrapper'>
+        <form action="">
+            <input type="text" autofocus id='input-text' />
+            <i class="fas fa-search fa-2x"></i>
+        </form>
+        <div class='close-button' id='close-button'>
+            <i class="fas fa-times fa-2x"></i>
+        </div>
+    </div>
+
+</body>
+</html>

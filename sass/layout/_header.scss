@@ -1,0 +1,192 @@
+header {
+    background-color: $black;
+
+    .pre-header {
+        background: linear-gradient(to right, rgba(6, 6, 6, 1) 0%, rgba(46, 46, 46, 1) 100%);
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin-right: 25px;
+
+                &:first-child {
+                    a {
+                        color: $orange;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $grey;
+            }
+
+            // Or:
+            /* & > :first-child {
+                a {
+                    color: $orange;
+                }
+            } */
+        }
+    }
+
+    nav {
+        // margin: 0 40px;
+        padding: 15px 40px;
+        // position: fixed;
+        background-color: $black;
+        width: 100%;
+        z-index: 20;
+
+        &.fixed-nav {
+            position: fixed;
+            top: 0;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-menu-button,
+        .search,
+        .user {
+            display: none;
+            background-color: transparent;
+            border: none;
+            font-size: 23px;
+            color: rgba(255, 255, 255, .75);
+
+            @media (max-width: $lg) {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            @media (max-width: $sm) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $lg) {
+                display: none;
+                width: 100%;
+            }
+
+            &.hamburger {
+                display: block;
+                height: 100vh;
+                text-align: center;
+            }
+
+            .header-logo {
+                margin-left: 35px;
+
+                @media (max-width: $lg) {
+                    margin-left: 0;
+                    margin-top: -35px;
+                    margin-bottom: 50px;
+                }
+
+                @media (max-width: $sm) {
+                    display: none;
+                }
+
+                a:first-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+
+            .header-li {
+                display: flex;
+                width: 100%;
+
+                &.hamburger {
+                    display: block;
+                    text-align: center;
+                }
+
+                & > :first-child {
+                    margin-left: 35px;
+
+                    @media (max-width: $lg) {
+                        margin-left: 0px;
+                    }
+                }
+
+                a {
+                    @media (max-width: 1250px) {
+                        font-size: 14px;
+                    }
+
+                    @media (max-width: $lg) {
+                        font-size: 25px;
+                        font-weight: 100;
+                        text-transform: none;
+                    }
+
+                    text-decoration: none;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    position: relative;
+
+                    // & => parent element
+                    // so same as a:hover
+                    &:after {
+                        content: "";
+                        display: none;
+                        background-color: $white;
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                    }
+
+                    &:hover {
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            li {
+                margin-right: 30px;
+
+                @media (max-width: $lg) {
+                    border-bottom: 1px solid $grey;
+                    line-height: 50px;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                }
+            }
+
+            .nav-right-side {
+                display: flex;
+
+                @media (max-width: $lg) {
+                    display: none;
+                }
+
+                a {
+                    color: $grey;
+                    margin-left: 35px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

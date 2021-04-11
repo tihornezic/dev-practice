@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $roboto;
+    background-color: $black;
+    overflow-y: scroll;
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+}
